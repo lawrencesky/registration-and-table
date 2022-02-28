@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../dist/css/all.css" />
+
+    <!-- UIkit -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/css/uikit.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit-icons.min.js"></script>
+
+    <!-- Box icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Registration</title>
+  </head>
+  <body>
+    <nav class="bg-gray-800 p-5 text-white">
+      <div class="container">
+        <a href="" class="hover:text-sky-800"
+          ><i class="bx bxs-chevron-left mr-5 float-left py-1"></i></a
+        >Registration
+      </div>
+    </nav>
+
+    <main class="uk-container my-10">
+      <p class="font-bold text-sky-800 text-2xl mt-7">PERSONAL INFORMATION</p>
+      <form action="">
+        <div class="mt-10 grid sm:grid-cols-1 xl:grid-cols-2 lg:grid-cols-2">
+          <div class="grid col-span-1 pr-16">
+            <div class="mb-6">
+              <label
+                for="email"
+                class="block mb-2 text-xs font-semibold text-gray-900"
+                >Name</label
+              >
+              <input
+                type="email"
+                id="email"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-xs rounded-lg block w-full p-2.5"
+                placeholder="name@flowbite.com"
+                required
+              />
+            </div>
+          </div>
+
+          <!-- RIGTH SIDE -->
+          <div class="grid col-span-1 pr-16">
+            <div class="mb-6">
+              <label
+                for="email"
+                class="block mb-2 text-xs font-semibold text-gray-900"
+                >Your email</label
+              >
+              <input
+                type="email"
+                id="email"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-xs rounded-lg block w-full p-2.5"
+                placeholder="name@flowbite.com"
+                required
+              />
+            </div>
+          </div>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

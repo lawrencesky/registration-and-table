@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Distance Learning | Enrollment System</title>
+
+      <script src="https://cdn.tailwindcss.com"></script>
+
+      <link rel="icon" href="./favicon.ico" sizes="32x32" type="image/png" />
+
+      <link rel="stylesheet" href="./dist/css/all.css" />
+
+      <link
+         rel="stylesheet"
+         href="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/css/uikit.min.css"
+      />
+
+      <!-- UIkit JS -->
+      <script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit-icons.min.js"></script>
+
+      <!-- Box icons -->
+      <link
+         href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+         rel="stylesheet"
+      />
+   </head>
+   <body class="">
+      <div class="container py-5 m-auto sm:p-10">
+         <div
+            class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-2 md:gap-3 lg:gap-6"
+         >
+            <div class="flex h-auto border-gray-300 bg-gray-50 p-4 col-span-1">
+               <div class="flex items-center content-center p-10">PHOTO</div>
+            </div>
+
+            <!-- Profile side -->
+            <div
+               class="flex h-auto border-gray-300 bg-gray-50 p-4 xl:col-span-2 lg:col-span-2 md:col-span-2 sm:col-span-1"
+            >
+               <div class="p-10">
+                  PROFILE HERE
+
+                  <div class="mt-16">PERSONAL DETAILS HERE</div>
+                  <div class="mt-16">PERSONAL DETAILS HERE</div>
+                  <div class="mt-16">PERSONAL DETAILS HERE</div>
+               </div>
+            </div>
+         </div>
+
+         <div class="float-right mt-10">
+            <button
+               class="bg-blue hover:bg-sky-800 text-white px-4 py-2 rounded"
+            >
+               Programs
+               <i class="bx bxs-chevron-down py-1 pl-2 float-right"></i>
+            </button>
+            <div uk-dropdown="mode: click">
+               <ul class="uk-nav uk-dropdown-nav">
+                  <li class="uk-active">Programs</li>
+                  <div class="mt-5"></div>
+                  <li>
+                     <a href="pages/nursing.html" class="hover:font-semibold"
+                        >Nursing</a
+                     >
+                  </li>
+                  <li>
+                     <a href="pages/educ.html" class="hover:font-semibold"
+                        >Education</a
+                     >
+                  </li>
+               </ul>
+            </div>
+
+            <button
+               class="bg-blue hover:bg-sky-800 text-white px-4 py-2 rounded ml-3"
+            >
+               Subjects
+               <i class="bx bxs-chevron-down py-1 pl-2 float-right"></i>
+            </button>
+            <div uk-dropdown="mode: click">
+               <ul class="uk-nav uk-dropdown-nav">
+                  <li class="uk-active">Subject codes</li>
+                  <div class="mt-5"></div>
+                  <li>
+                     <a href="pages/nursing.html" class="hover:font-semibold"
+                        >Subject 1</a
+                     >
+                  </li>
+                  <li>
+                     <a href="pages/nursing.html" class="hover:font-semibold"
+                        >Subject 2</a
+                     >
+                  </li>
+                  <li>
+                     <a href="pages/nursing.html" class="hover:font-semibold"
+                        >Subject 3</a
+                     >
+                  </li>
+                  <li>
+                     <a href="pages/educ.html" class="hover:font-semibold"
+                        >Subject 4</a
+                     >
+                  </li>
+               </ul>
+            </div>
+         </div>
+
+         <!-- Table -->
+
+         <div class="pt-10">
+            <div class="flex-auto">
+               <div class="my-16 overflow-x-auto">
+                  <div class="py-2 align-middle inline-block min-w-full">
+                     <div class="shadow-md overflow-hidden sm:rounded-lg">
+                        <table
+                           class="table-auto min-w-full divide-y divide-gray-200"
+                        >
+                           <thead class="tb-head">
+                              <tr>
+                                 <th
+                                    scope="col"
+                                    class="px-4 py-4 text-left text-sm font-medium text-white uppercase tracking-wider"
+                                 >
+                                    Subject Code
+                                 </th>
+
+                                 <th
+                                    scope="col"
+                                    class="px-4 py-4 text-left text-sm font-medium text-white uppercase tracking-wider"
+                                 >
+                                    Description
+                                 </th>
+
+                                 <th
+                                    scope="col"
+                                    class="px-4 py-4 text-left text-sm font-medium text-white uppercase tracking-wider"
+                                 >
+                                    Units
+                                 </th>
+
+                                 <th
+                                    scope="col"
+                                    class="px-4 py-4 text-left text-sm font-medium text-white uppercase tracking-wider"
+                                 >
+                                    Day and Time
+                                 </th>
+
+                                 <th
+                                    scope="col"
+                                    class="px-4 py-4 text-left text-sm font-medium text-white uppercase tracking-wider"
+                                 >
+                                    Professor
+                                 </th>
+                              </tr>
+                           </thead>
+                           <tbody class="bg-white divide-y divide-gray-400">
+                              <tr>
+                                 <td class="px-2 whitespace-nowrap">
+                                    <div class="flex items-center">
+                                       <div class="ml-4">
+                                          <div
+                                             class="font-medium text-gray-900"
+                                          >
+                                             CODE 123
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </td>
+                                 <td 4lass="px-6 py-6 whitespace-nowrap">
+                                    <div class="text-gray-900">
+                                       Subject 1 Description Sample
+                                    </div>
+                                    <!-- <div class=" text-white">
+                                    Optimization
+                                 </div> -->
+                                 </td>
+
+                                 <td class="px-6 py-6 whitespace-nowrap">
+                                    <div class="text-gray-900">5</div>
+                                 </td>
+
+                                 <!-- <td class="px-6 py-6 whitespace-nowrap">
+                                 <span
+                                    class="px-2 inline-flex  leading-5 font-semibold rounded-full bg-green-100 text-green-800"
+                                 >
+                                    Active
+                                 </span>
+                              </td> -->
+                                 <td
+                                    4class="px-6 py-6 whitespace-nowrap text-gray-900"
+                                 >
+                                    Tuesday & Friday
+                                    <div class="text-gray-500">
+                                       11:30 am - 12:00 pm
+                                    </div>
+                                 </td>
+                                 <td class="px-6 py-6 whitespace-nowrap">
+                                    <div class="text-gray-900">
+                                       Professor 1 Full name
+                                    </div>
+                                 </td>
+                              </tr>
+
+                              <!-- More people... -->
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
